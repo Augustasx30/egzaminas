@@ -1,0 +1,18 @@
+﻿<Window x:Class="egzaminas.Window3"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="ChangePasswordWindow" Height="298" Width="396">
+    <Grid>
+        <TextBlock Text="Senas Slaptažodis" HorizontalAlignment="Left" Margin="30,30,0,0" VerticalAlignment="Top"/>
+        <PasswordBox Name="OldPasswordBox" HorizontalAlignment="Left" Margin="150,30,0,0" VerticalAlignment="Top" Width="200"/>
+
+        <TextBlock Text="Naujas Slaptažodis" HorizontalAlignment="Left" Margin="30,80,0,0" VerticalAlignment="Top"/>
+        <PasswordBox Name="NewPasswordBox" HorizontalAlignment="Left" Margin="150,80,0,0" VerticalAlignment="Top" Width="200"/>
+
+        <TextBlock Text="Pakartoti Slaptažodi" HorizontalAlignment="Left" Margin="30,130,0,0" VerticalAlignment="Top"/>
+        <PasswordBox Name="RepeatPasswordBox" HorizontalAlignment="Left" Margin="150,130,0,0" VerticalAlignment="Top" Width="200"/>
+
+        <Button Content="Pakeisti Slaptažodi" HorizontalAlignment="Left" Margin="30,180,0,0" VerticalAlignment="Top" Width="120" Click="ChangePasswordButton_Click"/>
+        <Button Content="Atgal" HorizontalAlignment="Left" Margin="230,180,0,0" VerticalAlignment="Top" Width="120" Click="BackButton_Click"/>
+    </Grid>
+</Window>

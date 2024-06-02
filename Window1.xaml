@@ -1,0 +1,26 @@
+﻿<Window x:Class="egzaminas.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:egzaminas"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="WebsiteTextBox" HorizontalAlignment="Left" Height="24" Margin="38,56,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="231"/>
+        <TextBox x:Name="PasswordTextBox" HorizontalAlignment="Left" Height="24" Margin="38,129,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="231"/>
+        <TextBlock HorizontalAlignment="Left" Height="16" Margin="38,35,0,0" TextWrapping="Wrap" Text="Svetainės pavadinimas" VerticalAlignment="Top" Width="175"/>
+        <TextBlock HorizontalAlignment="Left" Height="16" Margin="38,108,0,0" TextWrapping="Wrap" Text="Svetainės slaptažodis" VerticalAlignment="Top" Width="175"/>
+        <ListView x:Name="WebsiteListView" HorizontalAlignment="Left" Height="224" Margin="325,20,0,0" VerticalAlignment="Top" Width="437">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Svetainės pavadinimas" DisplayMemberBinding="{Binding Website}"/>
+                    <GridViewColumn Header="Svetainės slaptažodis" DisplayMemberBinding="{Binding Password}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button Content="Pridėti" HorizontalAlignment="Left" Height="24" Margin="38,180,0,0" VerticalAlignment="Top" Width="100" Click="AddButton_Click"/>
+        <Button Content="Atsijungti" HorizontalAlignment="Left" Height="24" Margin="38,220,0,0" VerticalAlignment="Top" Width="100" Click="LogoutButton_Click"/>
+        <Label x:Name="UsernameLabel" Content="Username" HorizontalAlignment="Left" Margin="38,10,0,0" VerticalAlignment="Top"/>
+    </Grid>
+</Window>
